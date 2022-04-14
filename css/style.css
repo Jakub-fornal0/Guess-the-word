@@ -92,7 +92,7 @@ input:checked + .slider:before {
 .logo {
   width: 90%;
   text-align: center;
-  padding-left: 30px;
+  padding-left: 150px;
 }
 
 .theme-switch-wrapper {
@@ -104,4 +104,51 @@ input:checked + .slider:before {
 .main {
   background-color: var(--primary-color);
   height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main button {
+  width: 250px;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: var(--primary-color);
+}
+
+.main button:nth-child(1) {
+  border: 5px solid #378805;
+  background-color: #378805;
+}
+
+.main button:nth-child(2) {
+  border: 5px solid #ffff00;
+  background-color: #ffff00;
+}
+
+.main button:nth-child(3) {
+  border: 5px solid #ff0000;
+  background-color: #ff0000;
+}
+
+/*------ INPUTS ------*/
+.main input {
+  width: 75px;
+  height: 75px;
+  margin: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.check_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

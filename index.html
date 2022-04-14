@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+    <script src="js/scripts.js"></script>
   </head>
 
   <body>
@@ -26,7 +27,13 @@
         </label>
       </div>
     </div>
-
-    <div class="main"></div>
+    <div class="main">
+      <div id="level_selection">
+        <button type="button" onclick="generateFields(4)">Łatwy</button>
+        <button type="button" onclick="generateFields(5)">Średni</button>
+        <button type="button" onclick="generateFields(6)">Trudny</button>
+      </div>
+      <div id="display"></div>
+    </div>
   </body>
 </html>
