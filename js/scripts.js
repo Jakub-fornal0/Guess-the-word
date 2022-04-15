@@ -4,7 +4,7 @@ function generateLength4() {
   return word;
 }
 function generateLength5() {
-  var letter5 = ["OLIWA", "POETA", "TRAWA", "TWARZ", "ROWER"];
+  var letter5 = ["OLIWA", "POETA", "TRAWA", "TWARZ", "ROWER", "RUINA"];
   var word = letter5[Math.floor(Math.random() * letter5.length)];
   return word;
 }
@@ -42,17 +42,13 @@ function checkWord(quantity) {
             ).style.background = "#ffff33";
           }
         }
-      }
 
-      for (i = 0; i < word.length; i++) {
         if (inputLetters[i].toUpperCase() === word.charAt(i).toUpperCase()) {
           document.getElementById(
             "input_" + attempNumber + "_" + i
           ).style.background = "#378805";
         }
-      }
 
-      for (i = 0; i < word.length; i++) {
         if (inputLetters[i].toUpperCase() === "") {
           document.getElementById(
             "input_" + attempNumber + "_" + i
@@ -77,7 +73,7 @@ function checkWord(quantity) {
         var el = document.getElementById("display");
         var str = "<div class='result'>";
         str += "<h1>Gratulacje, znaleziono szukane słowo!</h1><br />";
-        str += "<h2>" + word + "</h2><br />";
+        str += "<h2><b>" + word + "</b></h2><br />";
         str += "<h2><a href='index.html'>Zagraj ponownie</a></h2>";
         str += "</div>";
         el.innerHTML = str;
@@ -88,7 +84,7 @@ function checkWord(quantity) {
         var el = document.getElementById("display");
         var str = "<div class='result'>";
         str += "<h1>Niestety, nie udało się...</h1><br />";
-        str += "<h2>Szukane słowo: " + word + "</h2><br />";
+        str += "<h2>Szukane słowo: <b>" + word + "</b></h2><br />";
         str += "<h2><a href='index.html'>Zagraj ponownie</a></h2>";
         str += "</div>";
         el.innerHTML = str;

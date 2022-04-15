@@ -1,24 +1,23 @@
 :root {
-  --primary-color: #e4deae;
-  --secondary-color: #b7bf96;
-  --font-color: ;
+  --primary-color: #ebf0fb; /*#e4deae;*/
+  --secondary-color: #d8ebff; /*#b7bf96;*/
 }
 
-html[data-theme="dark"] {
-  --primary-color: #133a1b;
-  --secondary-color: #011b10;
-  --font-color: ;
+.body {
+  background-color: #00cdac;
 }
 
 /*------ BANNER ------*/
 .banner {
-  width: 100%;
-  height: 15vh;
-  margin: auto;
+  width: 80%;
+  height: 14vh;
+  margin: 5px auto 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--secondary-color);
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 }
 
 .banner h1 {
@@ -41,54 +40,67 @@ html[data-theme="dark"] {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.theme-switch-wrapper {
-  width: 10%;
-  padding: 15px;
-}
-
 /*------ MAIN ------*/
 .main {
   background-color: var(--primary-color);
-  height: 85vh;
+  width: 80%;
+  height: 84vh;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.main h1 {
+  text-align: center;
+  font-family: Apple Chancery, cursive;
+  padding-bottom: 30px;
 }
 
 .main button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Apple Chancery, cursive;
   width: 250px;
   height: auto;
   padding: 20px;
   text-align: center;
   margin: 20px 10px;
   border-radius: 25px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 30px;
-  background-color: var(--primary-color);
-}
-
-.main button:nth-child(1) {
-  border: 5px solid #378805;
-  background-color: #378805;
+  transition: 0.7s;
 }
 
 .main button:nth-child(2) {
-  border: 5px solid #ffff00;
-  background-color: #ffff00;
+  border: 5px solid #7db954;
+  background-color: #7db954;
 }
 
 .main button:nth-child(3) {
-  border: 5px solid #ff0000;
-  background-color: #ff0000;
+  border: 5px solid #ffef6f;
+  background-color: #ffef6f;
+}
+
+.main button:nth-child(4) {
+  border: 5px solid #ff7e5a;
+  background-color: #ff7e5a;
+}
+
+.main button:hover {
+  -webkit-box-shadow: 16px 19px 36px -2px rgba(157, 157, 159, 1);
+  -moz-box-shadow: 16px 19px 36px -2px rgba(157, 157, 159, 1);
+  box-shadow: 16px 19px 36px -2px rgba(157, 157, 159, 1);
+  transform: scale(1.05);
 }
 
 /*------ INPUTS ------*/
 .main input {
-  width: 75px;
-  height: 75px;
-  margin: 20px;
+  width: 68px;
+  height: 68px;
+  margin: 5px;
   font-size: 50px;
   text-align: center;
 }
@@ -105,9 +117,9 @@ html[data-theme="dark"] {
 }
 
 .disabled_inputs input {
-  width: 50px;
-  height: 50px;
-  margin: 15px;
+  width: 57px;
+  height: 57px;
+  margin: 5px;
   font-size: 30px;
   text-align: center;
   color: #000;
@@ -121,6 +133,8 @@ html[data-theme="dark"] {
 .result h2 {
   text-align: center;
   font-size: 30px;
+  font-family: Apple Chancery, cursive;
+  padding-bottom: 40px;
 }
 
 .result a {
@@ -151,4 +165,103 @@ html[data-theme="dark"] {
 .result a:hover {
   text-decoration: none;
   color: #000;
+}
+
+/*------ MEDIA QUERIES ------*/
+@media only screen and (max-width: 480px) {
+  .banner h1 {
+    font-size: 5vh;
+  }
+
+  .main h1 {
+    font-size: 4vh;
+  }
+
+  .main button {
+    width: 75px;
+    font-size: 1vh;
+  }
+
+  .inputs input {
+    width: 37px;
+    height: 37px;
+    margin: 5px;
+    font-size: 15px;
+  }
+
+  .disabled_inputs input {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 10px;
+  }
+
+  .check_button #check_bttn {
+    width: 155px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .banner h1 {
+    font-size: 5vh;
+  }
+
+  .main h1 {
+    font-size: 4vh;
+  }
+
+  .main button {
+    width: 100px;
+    font-size: 2vh;
+  }
+
+  .inputs input {
+    width: 52px;
+    height: 52px;
+    margin: 5px;
+    font-size: 25px;
+  }
+
+  .disabled_inputs input {
+    width: 44px;
+    height: 44px;
+    margin: 5px;
+    font-size: 17px;
+  }
+
+  .check_button #check_bttn {
+    width: 190px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .main h1 {
+    font-size: 4vh;
+  }
+
+  .main button {
+    width: 150px;
+    font-size: 3vh;
+  }
+
+  .inputs input {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 25px;
+  }
+
+  .disabled_inputs input {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 17px;
+  }
+
+  .check_button #check_bttn {
+    width: 220px;
+    font-size: 17px;
+  }
 }

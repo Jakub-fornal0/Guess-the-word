@@ -16,7 +16,7 @@
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   </head>
 
-  <body>
+  <body class="body">
     <div class="banner">
       <div class="logo">
         <a href="index.html"><h1>GUESS THE WORD</h1></a>
@@ -24,9 +24,10 @@
     </div>
     <div class="main">
       <div id="level_selection">
-        <button type="button" onclick="generateFields(4)">Łatwy</button>
-        <button type="button" onclick="generateFields(5)">Średni</button>
-        <button type="button" onclick="generateFields(6)">Trudny</button>
+        <h1>Wybierz poziom trudności!</h1>
+        <button type="button" onclick="generateFields(4)">EASY</button>
+        <button type="button" onclick="generateFields(5)">MEDIUM</button>
+        <button type="button" onclick="generateFields(6)">HARD</button>
       </div>
       <div id="display"></div>
     </div>
