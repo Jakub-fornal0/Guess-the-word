@@ -1,16 +1,16 @@
 function generateLength4() {
-  var letter4 = ["KURA", "PORA", "PTAK", "KLUB", "KOZA"];
-  var word = letter4[Math.floor(Math.random() * 5)];
+  var letter4 = ["KURA", "PORA", "PTAK", "KLUB", "KOZA", "SMAK", "RAMA"];
+  var word = letter4[Math.floor(Math.random() * letter4.length)];
   return word;
 }
 function generateLength5() {
   var letter5 = ["OLIWA", "POETA", "TRAWA", "TWARZ", "ROWER"];
-  var word = letter5[Math.floor(Math.random() * 5)];
+  var word = letter5[Math.floor(Math.random() * letter5.length)];
   return word;
 }
 function generateLength6() {
   var letter6 = ["LAWETA", "ZALETA", "WIZYTA", "RAZOWY", "ROZETA"];
-  var word = letter6[Math.floor(Math.random() * 5)];
+  var word = letter6[Math.floor(Math.random() * letter6.length)];
   return word;
 }
 
