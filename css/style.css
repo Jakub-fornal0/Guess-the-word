@@ -176,6 +176,7 @@ input:checked + .slider:before {
   color: #000;
 }
 
+/*------ RESULT ------*/
 .result h1 {
   text-align: center;
   font-size: 50px;
@@ -183,4 +184,34 @@ input:checked + .slider:before {
 .result h2 {
   text-align: center;
   font-size: 30px;
+}
+
+.result a {
+  text-decoration: none;
+  color: #0da2ff;
+  transition: 0.5s;
+  position: relative;
+}
+
+.result a::after {
+  text-decoration: none;
+  color: #0da2ff;
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #0da2ff;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 1s;
+}
+
+.result a:hover::after {
+  text-decoration: none;
+  color: #0da2ff;
+  width: 100%;
+}
+.result a:hover {
+  text-decoration: none;
+  color: #000;
 }

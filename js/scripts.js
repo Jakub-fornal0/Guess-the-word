@@ -78,6 +78,7 @@ function checkWord(quantity) {
         var str = "<div class='result'>";
         str += "<h1>Gratulacje, znaleziono szukane słowo!</h1><br />";
         str += "<h2>" + word + "</h2><br />";
+        str += "<h2><a href='index.html'>Zagraj ponownie</a></h2>";
         str += "</div>";
         el.innerHTML = str;
       }
@@ -88,6 +89,7 @@ function checkWord(quantity) {
         var str = "<div class='result'>";
         str += "<h1>Niestety, nie udało się...</h1><br />";
         str += "<h2>Szukane słowo: " + word + "</h2><br />";
+        str += "<h2><a href='index.html'>Zagraj ponownie</a></h2>";
         str += "</div>";
         el.innerHTML = str;
       }
