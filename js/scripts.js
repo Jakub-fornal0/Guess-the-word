@@ -1,15 +1,39 @@
 function generateLength4() {
-  var letter4 = ["KURA", "PORA", "PTAK", "KLUB", "KOZA", "SMAK", "RAMA"];
+  var letter4 = [
+    "KURA",
+    "PORA",
+    "PTAK",
+    "KLUB",
+    "KOZA",
+    "SMAK",
+    "RAMA",
+    "OAZA",
+    "POZA",
+    "LATO",
+    "KAWA",
+    "ATAK",
+    "LADA",
+    "WADA",
+  ];
   var word = letter4[Math.floor(Math.random() * letter4.length)];
   return word;
 }
 function generateLength5() {
-  var letter5 = ["OLIWA", "POETA", "TRAWA", "TWARZ", "ROWER", "RUINA"];
+  var letter5 = [
+    "OLIWA",
+    "POETA",
+    "TRAWA",
+    "TWARZ",
+    "ROWER",
+    "RUINA",
+    "ROBAK",
+    "BRAMA",
+  ];
   var word = letter5[Math.floor(Math.random() * letter5.length)];
   return word;
 }
 function generateLength6() {
-  var letter6 = ["LAWETA", "ZALETA", "WIZYTA", "RAZOWY", "ROZETA"];
+  var letter6 = ["LAWETA", "ZALETA", "WIZYTA", "RAZOWY", "ROZETA", "PORTAL"];
   var word = letter6[Math.floor(Math.random() * letter6.length)];
   return word;
 }
