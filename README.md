@@ -1,4 +1,7 @@
 # Guess the word
+
+live: https://jakub-fornal0.github.io/Guess-the-word/
+
 A word-guess game. 
 Three difficulty levels: 
  * easy - 4 letter word
